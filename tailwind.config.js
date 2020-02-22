@@ -1,7 +1,14 @@
 // See https://tailwindcss.com/docs/configuration for details
+const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
-  theme: {},
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Poppins', ...defaultTheme.fontFamily.sans],
+      },
+    },
+  },
   variants: {},
   // https://github.com/tailwindcss/custom-forms
-  plugins: [require("@tailwindcss/custom-forms")]
+  plugins: [require('@tailwindcss/custom-forms')],
 };
