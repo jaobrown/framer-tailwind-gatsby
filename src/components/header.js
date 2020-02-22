@@ -14,8 +14,8 @@ function Header() {
   `);
 
   return (
-    <header className="bg-teal-700">
-      <div className="flex flex-wrap items-center justify-between max-w-4xl mx-auto p-4 md:p-8">
+    <header className="bg-teal-500">
+      <div className="flex flex-wrap items-center justify-between max-w-6xl mx-auto p-4 md:p-8">
         <Link className="flex items-center no-underline text-white" to="/">
           <svg
             className="fill-current h-8 mr-2 w-8"
