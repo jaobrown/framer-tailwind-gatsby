@@ -29,20 +29,19 @@ function ContactPage() {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Contact" />
       <motion.section
         className="h-screen flex flex-wrap"
         animate="animate"
         initial="initial"
+        exit="exit"
       >
-        {/* <motion.div
-          variants={swipeTransition}
-          className="absolute top-0 bottom-0 left-0 right-0 bg-red-900 z-20"
-        /> */}
         <div className="bg-white w-full lg:w-7/12 flex justify-between pl-32 items-center">
           <motion.h1
             variants={stagger}
             className="text-5xl font-black leading-tight"
+            exit={{ opacity: 0, y: -10 }}
+            key="title"
           >
             <span className="overflow-hidden block relative">
               <motion.span variants={fadeInUp} className="block">
