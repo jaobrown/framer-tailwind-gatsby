@@ -8,16 +8,17 @@ export const stagger = {
   },
 };
 
-export const fadeInLeft = {
+export const fadeInDown = {
   initial: {
-    x: 10,
+    y: -30,
     opacity: 0,
     transition: { duration: 0.5, ease: easing },
   },
   animate: {
-    x: 0,
+    y: 0,
     opacity: 1,
     transition: {
+      delay: 0.5,
       duration: 0.5,
       ease: easing,
     },
