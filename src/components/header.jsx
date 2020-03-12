@@ -5,7 +5,7 @@ import { fadeInDown } from '../animations/header.animations';
 
 const Header = () => (
   <motion.nav
-    className="px-24 py-12 bg-transparent flex justify-between fixed w-screen z-30"
+    className="px-24 py-12 bg-transparent flex justify-between fixed w-screen z-40"
     animate="animate"
     initial="initial"
   >
